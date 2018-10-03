@@ -1,0 +1,22 @@
+title: Reservations
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.reservations:
+          type: tab
+          title: ✴ Reservations
+          icon: asterisk
+          text: Enter details for this person
+
+          fields:
+
+            .description:
+              type: textarea
+              label: Notes
+              help: Notes about this plugin's configuration
+              size: medium
